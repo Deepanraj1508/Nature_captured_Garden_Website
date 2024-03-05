@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/static/style.css">    -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <title>Welcome to Narure Captured</title>
+    
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+
+                <div class="brand">
+                    <img class="brand" src="../static/img/natural captured logo.png">
+                </div>
+
+
+
+                <ul id="menu">
+                    <li><a href="#home" class="menu-list">Home</a></li>
+                    <li><a href="#gallery" class="menu-list">Gallery</a></li>
+                    <li><a href="#about" class="menu-list">About</a></li>
+                    <li><a href="#services" class="menu-list">Service</a></li>
+                    <li><a href="#ordernow" class="menu-list">Order Now</a></li>
+                    <li><a href="#contact" class="menu-list">Contact Us</a></li>
+                </ul>
+
+                <div class="hamburger-menu">
+                    <div class="flex-container">
+                        <span class="flex-item"></span>
+                        <span class="flex-item"></span>
+                        <span class="flex-item"></span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="welcome flex-container" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="welcome-message">
+                        <h1>Love <span>plants</span>, love <span>yourself</span>.</h1>
+                        <h2>
+                            Beautify your home page with <br>quality ornamental plants.</h2>
+                        <button class="btn">
+                            <a href="#gallery">Learn More</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="gallery" id="gallery">
+            <div class="container">
+                <div class="row">
+                    <h1>Gallery</h1>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="gallery-frame flex-container">
+                        <div class="gallery-photo">
+                            <img src="../static/img/1.jpg" alt="" class="flex-item">
+                            <div class="item-details" data-id="1">
+                                <p>Moth orchids</p>
+                                <p class="price">Rs. 300.00</p>
+                                <button class="add-to-cart" data-item="1">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="gallery-photo">
+                            <img src="../static/img/2.jpg" alt="" class="flex-item">
+                            <div class="item-details" data-id="2">
+                                <p>Moth orchid</p>
+                                <p class="price">Rs. 320.00</p>
+                                <button class="add-to-cart" data-item="2">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="gallery-photo">
+                            <img src="../static/img/3.jpg" alt="" class="flex-item">
+                            <div class="item-details" data-id="2">
+                                <p>Melastomes</p>
+                                <p class="price">Rs. 80.00</p>
+                                <button class="add-to-cart" data-item="3">Add to Cart</button>
+                            </div>
+                        </div>
+                        <div class="gallery-photo">
+                            <img src="../static/img/4.jpg" alt="" class="flex-item">
+                            <div class="item-details" data-id="2">
+                                <p>Soil</p>
+                                <p class="price">Rs.100.00</p>
+                                <button class="add-to-cart" data-item="1">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+<center>
+    <a href="../static/gallery.html" class="loadmore">View more..</a>
+<br>
+
+</center>       
+<br>
+            </div>
+        </div>
+
+        <section id="services">
+            <div class="row">
+                <h1>Our Services</h1>
+                <hr>
+            </div>
+            
+            <div class="service">
+                <center>
+                    <div class="image-container">
+                        <img src="../static/img/plant services.jpg" alt="Planting Service" class="service-image">
+                        <img src="../static/img/Planting Service1.jpg" alt="Planting Service" class="service-image">
+                        <img src="../static/img/Planting Service2.jpg" alt="Planting Service" class="service-image">
+                    </div>
+                    <h3>Planting Service</h3>
+                
+                </center>
+                <div class="container1">
+                    <p style="max-width: 90rem; margin: 0; ">We offer professional planting services for your garden. Let us help you create a beautiful and vibrant garden space.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, exercitationem. Tenetur aut placeat ea, sapiente possimus eum facere. 
+                        Doloremque maxime quod aspernatur beatae consequatur voluptatibus sunt aut odit blanditiis explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deleniti, 
+                        incidunt cumque voluptatem aut accusantium adipisci aperiam quidem corporis possimus sint eius. Dolor nobis odit nihil animi consectetur, reiciendis magni!</p>
+                </div>
+            </div>
+
+                <!-- Add this inside the form in your HTML -->
+
+
+            <div class="service">
+                <center>
+                    <div class="image-container">
+                        <img src="../static/img/Maintenance Service.jpg" alt="Planting Service" class="service-image">
+                        <img src="../static/img/Maintenance Service1.jpg" alt="Planting Service" class="service-image">
+                        <img src="../static/img/Maintenance Service2.jpg" alt="Planting Service" class="service-image">
+                    </div>
+                    <h3>Maintenance Service</h3>
+            </center>
+            <div class="container1">
+                <p style="max-width: 90rem; margin: 0; ">We offer professional planting services for your garden. Let us help you create a beautiful and vibrant garden space.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, exercitationem. Tenetur aut placeat ea, sapiente possimus eum facere. 
+                    Doloremque maxime quod aspernatur beatae consequatur voluptatibus sunt aut odit blanditiis explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt deleniti, 
+                    incidunt cumque voluptatem aut accusantium adipisci aperiam quidem corporis possimus sint eius. Dolor nobis odit nihil animi consectetur, reiciendis magni!</p>
+            </div>
+            </div>
+        </section>
+
+        <div class="about" id="about">
+            <div class="container">
+                <div class="row">
+                    <h1>About</h1>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="about-garden flex-container">
+                        <aside class="flex-item">
+                            <img src="../static/img/Nature-captured-color.png" alt="Nature Ceptured">
+                        </aside>
+                        <article class="flex-item">
+                            <p>Nature Captured is a shop that provides various kinds of ornamental plant needs to beautify
+                                your home page. Plants are produced using the best methods to produce quality plants.
+                                There are various types of plants ranging from Orchid, Aglaonema, Caladium, and others.
+                            </p>
+                        </article>
+                    </div>
+                    <br><br><br>
+                    <div class="about-person flex-container">
+                        <aside class="flex-item">
+                            <img src="../static/img/7.jpg" alt="Nature">
+                        </aside>
+                        <article class="flex-item">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla libero aperiam
+                                consectetur iste ratione, excepturi perferendis tenetur ipsa incidunt laboriosam
+                                exercitationem saepe corporis? Odit velit eum molestiae corrupti, quidem expedita!
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <h1>Contact</h1>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="flex-container">
+                        <div class="contact-map flex-item">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62671.62344067892!2d78.02675757364119!3d10.96514888383614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa2f072495398f%3A0x947cfc7a1f7d9f1b!2sKarur%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1709614519127!5m2!1sen!2sin" 
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
+                        </div>
+
+                        <div class="contact-media flex-item" id="contact-media">
+                            <ul>
+                                <li><span>Workshop:</span> Karur. TamilNadu</li>
+                                <li><span>Open:</span> Daily, 08.00 AM - 05.00 PM</li>
+                                <li><span>Phone/WA:</span> <a href="tel:+917708486647">+91 7708486647</a></li>
+                                <li><span>E-mail:</span> <a href="mailto:deepanraj.k15@gmail.com">contact@naturecaptured.com</a></li>
+                                <li><span>Instagram:</span> <a href="https://www.instagram.com/mr._attract/">@nature_captured</a></li>
+                                <li><span>Twitter:</span> <a href="https://twitter.com/Deepanr17836097">@nature_captured</a></li>
+                                <li><span>Facebook:</span> <a href="https://www.facebook.com/deepanraj.deepanraj.77312?mibextid=ZbWKwL">Nature Captured</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+<br>
+<br>
+<center><h1 id="ordernow"> Order Now</h1></center>
+        <form action="/" method="post">
+            <label for="customerName">Customer Name:</label>
+            <input type="text" id="customerName" name="customerName" required>
+    
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" required>
+    
+    
+    
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="productName" required>
+    
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+    
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+    <center>
+
+        <button type="submit">Order Now</button>
+    </center>   
+        </form>
+
+        
+    </main>
+
+    <div id="product-modal" class="modal">
+        <div id="modal-content" class="modal-content"></div>
+    </div>
+    <div id="modal-overlay" class="modal-overlay"></div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="flex-container">
+                    <h4 class="flex-item">Copyright 2024 - <span>Nature Captured</span> - Deepanraj K</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>

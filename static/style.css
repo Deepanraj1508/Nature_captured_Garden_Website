@@ -1,0 +1,656 @@
+/* reset css */
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    /* border: solid 1px red; */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* begin general */
+.btn {
+    background-color: #2a9354;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.btn a {
+    font-size: 24px;
+    color: white;
+}
+
+.container {
+    padding: 0 2.5%;
+    overflow: auto;
+}
+
+.row {
+    text-align: center;
+    padding: 10px;
+}
+
+.flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-item {
+    flex-grow: 1;
+    /* padding: 0 5%; */
+    width: 90%;
+}
+
+hr {
+    margin-top: 20px;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px #2A9354;
+}
+
+/* end general */
+
+/* begin navigation */
+header {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    position: fixed;
+    z-index: 10;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    /* border: solid 2px green; */
+    height: 100px;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    margin-left: 5%;
+}
+
+.brand img {
+    height: 80%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header a {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+header ul {
+    display: flex;
+    width: 50%;
+    /* margin-right: 20%; */
+    justify-content: space-around;
+}
+
+
+header a:hover {
+    color: #44D97F;
+    transition: ease-in-out 0.5s;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* end navigation */
+
+/* begin welcome */
+.welcome {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../static/img/background.jpg");
+    width: 100%;
+    height: 769px;
+    background-size: cover;
+}
+
+.welcome-message h1 {
+    font-size: 64px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-message h2 {
+    font-size: 28px;
+    margin-top: 30px;
+    color: white;
+    font-weight: 100;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-message button {
+    margin-top: 30px;
+}
+
+.welcome-message span {
+    color: #44D97F;
+}
+
+/* end welcome */
+
+/* begin gallery */
+.gallery {
+    height: 100%;
+    margin-top: 30px;
+}
+
+.gallery-photo {
+    /* height: 300px;
+    width: 300px; */
+    margin: 1.5%;
+    position: relative;
+}
+
+.gallery-photo img {
+    box-shadow: 10px 10px 5px #ccc;
+    border-radius: 10px;
+}
+
+.gallery-photo img:hover {
+    transform: scale(1.1);
+    transition: transform ease-in-out 0.5s;
+}
+
+.item-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+}
+
+.add-to-cart {
+    background-color: #2a9354;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #1a502f;
+}
+
+
+
+.photo {
+    box-shadow: 10px 10px 5px #ccc;
+    border: solid 1px red;
+    width: 100%;
+    height: 100%;
+}
+
+/* end gallery */
+
+/* begin about */
+.about {
+    /* height: 100%; */
+    margin-top: 30px;
+}
+
+.about p {
+    text-align: justify;
+}
+
+.about-person img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.about-person {
+    align-items: unset;
+}
+
+/* end about */
+
+/* begin contact */
+.contact {
+    height: 100%;
+    margin-top: 30px;
+}
+
+.contact .flex-container {
+    align-items: unset;
+}
+
+.contact-media {
+    text-align: justify;
+    line-height: 300%;
+    /* border: solid 5px blue; */
+}
+
+.contact-media ul {
+    /* border: solid 5px green; */
+    width: 75%;
+    margin: 0 auto;
+}
+
+.contact-media span {
+    font-weight: bold;
+}
+
+.contact-media a {
+    color: #2A9354;
+}
+
+.contact-media a:hover {
+    color: rgb(194, 206, 36);
+    /* opacity: 0.7; */
+}
+
+#contact-media {
+    flex-basis: 100%;
+}
+
+
+footer {
+    height: 100%;
+    margin-top: 30px;
+    background-color: rgb(34, 49, 52);
+}
+
+footer h4 {
+    font-weight: lighter;
+    color: white;
+}
+
+footer span {
+    color: #44D97F;
+}
+
+/* end footer */
+
+/* begin tab screen */
+@media screen and (max-width: 768px) {
+    header {
+        background-color: rgb(34, 49, 52);
+    }
+
+    .about-garden img {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .about-person img {
+        margin-bottom: 30px;
+    }
+
+    .contact iframe {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .contact ul {
+        margin: 0;
+        width: 100%;
+    }
+
+    header a:hover {
+        color: #44D97F;
+        transition: ease-in-out 0.5s;
+    }
+}
+
+/* end tab screen */
+
+/* begin mobile screen */
+@media screen and (max-width: 576px) {
+    header {
+        background-color: rgb(34, 49, 52);
+    }
+
+    header ul {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        margin-right: 10px;
+    }
+
+
+    .hamburger-menu .flex-container {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .hamburger-menu span {
+        /* display: flex; */
+        /* flex-direction: column; */
+        width: 30px;
+        height: 5px;
+        background-color: white;
+        margin: 4px auto;
+        border-radius: 3px;
+        /* justify-content: right; */
+    }
+
+
+    .welcome-message h1 {
+        font-size: 36px;
+    }
+
+    .welcome-message h2 {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    .btn p {
+        font-size: 12px;
+        color: white;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .about-garden img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about-person img {
+        margin-bottom: 30px;
+    }
+
+    .contact iframe {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact ul {
+        margin: 0;
+        width: 100%;
+    }
+
+    footer h4 {
+        font-size: 12px;
+    }
+
+
+
+}
+
+.menu-toggle {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100px;
+    flex-direction: column;
+    background-color: rgb(34, 49, 52);
+    text-align: right;
+    padding-right: 50px;
+    width: 70%;
+}
+
+.menu-toggle li {
+    padding: 20px 0;
+}
+
+
+/* end mobile screen */
+
+.loadmore {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Green background color, you can change it */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline for anchor element */
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#services {
+    padding: 2em;
+}
+
+.service {
+    margin-bottom: 2em;
+}
+
+
+
+/* Add your existing styles here */
+
+/* .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.modal-content {
+    text-align: left;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+ */
+
+
+
+
+
+/* Your existing styles */
+
+#cart {
+    margin-top: 20px;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+#cart-items li {
+    margin-bottom: 10px;
+}
+
+#total-amount {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#product-modal {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 2em;
+    z-index: 999;
+}
+
+#modal-content {
+    text-align: left;
+}
+
+#modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 998;
+}
+
+#add-to-cart-modal {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+
+/* Service page */
+
+.image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.service-image {
+    height: 300px;
+    width: 300px;
+    margin: 6px 18px;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    text-align: justify;
+    padding: 20px;
+}
+
+
+/* Form */
+
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+small {
+    color: #888;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+.confirmation-message {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.confirmation-message h1 {
+    color: #4CAF50;
+}
+
+.confirmation-message p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}

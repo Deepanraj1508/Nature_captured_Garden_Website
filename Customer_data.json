@@ -1,0 +1,18 @@
+[
+  {
+    "orderDate": "2024-03-05 10:29:52",
+    "customerName": "hari",
+    "phoneNumber": "8754214578",
+    "productName": "Moth orchid",
+    "quantity": "2",
+    "address": "Chennai"
+  },
+  {
+    "orderDate": "2024-03-05 10:30:03",
+    "customerName": "hari",
+    "phoneNumber": "8754214578",
+    "productName": "Moth orchid",
+    "quantity": "2",
+    "address": "Chennai"
+  }
+]
